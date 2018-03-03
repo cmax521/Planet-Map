@@ -13,5 +13,8 @@ Click the image to get redirected to its location on the canvas.
 #### Quazar (The Low Quality Typhoon)
 [![](https://github.com/LowQuality/Minimap/blob/master/images/Quazar.png)](http://pixelcanvas.io/@0091,5603)
 
+#### Solar System
+[![](https://github.com/LowQuality/Minimap/blob/master/images/SolarSystem.png)](http://pixelcanvas.io/@9461,-3501)
+
 #### Trumpepe
 [![](https://github.com/LowQuality/Minimap/blob/master/images/Trumpepe.png)](http://pixelcanvas.io/@-2749,2923)
