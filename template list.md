@@ -20,7 +20,7 @@ Click the image to get redirected to its location on the canvas.
 [![](https://github.com/LowQuality/Minimap/blob/master/images/SpaceCanvasCenter.png)](http://pixelcanvas.io/@882,-82)
 
 #### SpaceCanvas Invite
-[![](https://github.com/LowQuality/Minimap/blob/master/images/SpaceCanvasCenter.png)](http://pixelcanvas.io/@9578,-3648)
+[![](https://github.com/LowQuality/Minimap/blob/master/images/SpaceCanvasInvite.png)](http://pixelcanvas.io/@9578,-3648)
 
 #### Trumpepe
 [![](https://github.com/LowQuality/Minimap/blob/master/images/Trumpepe.png)](http://pixelcanvas.io/@-2749,2923)
