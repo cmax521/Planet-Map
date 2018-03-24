@@ -13,20 +13,13 @@
     "width": 256,
     "height": 144
   },
-  "Ika-chan": {
-    "name": "Ika-chan.png",
-    "x": 5732,
-    "y": 2436,
-    "width": 105,
-    "height": 129
-  },
-  "Quazar": {
-    "name": "Quazar.png",
-    "x": -91,
-    "y":  5529,
-    "width": 438,
-    "height": 153
-  },
+  "Linkin Park": {
+    "name": "LinkinPark.png",
+    "x": 1228,
+    "y": -758,
+    "width": 40,
+    "height": 40
+},
   "Solar System": {
     "name": "SolarSystem.png",
     "x": 9111,
