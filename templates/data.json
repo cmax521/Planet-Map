@@ -13,6 +13,13 @@
     "width": 256,
     "height": 144
   },
+  "DBZ Characters": {
+    "name": "DBZ.png",
+    "x": 1003,
+    "y":  -792,
+    "width": 237,
+    "height": 180
+  },
   "Linkin Park": {
     "name": "LinkinPark.png",
     "x": 1228,
