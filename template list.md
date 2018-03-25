@@ -8,7 +8,7 @@ Click the image to get redirected to its location on the canvas.
 [![](https://github.com/LowQuality/Minimap/blob/master/images/CrabIsland.png)](http://pixelcanvas.io/@721,49)
 
 #### DBZ Characters
-[![](https://github.com/LowQuality/Minimap/blob/master/images/DBZ.png)](http://pixelcanvas.io/@1121,-702)
+[![](https://github.com/LowQuality/Minimap/blob/master/images/DBZ.png)](http://pixelcanvas.io/@1121,-726)
 
 #### Linkin Park
 [![](https://github.com/LowQuality/Minimap/blob/master/images/LinkinPark.png)](http://pixelcanvas.io/@1248,-738)
