@@ -1,6 +1,9 @@
 ### Template list
 Click the image to get redirected to its location on the canvas.
 
+#### All-Faction Memorial (work in progress)
+[![](https://github.com/LowQuality/Minimap/blob/master/images/AFM.png)](http://pixelcanvas.io/@213,-408)
+
 #### Chrono Trigger
 [![](https://github.com/LowQuality/Minimap/blob/master/images/ChronoTrigger.png)](http://pixelcanvas.io/@2949,866)
 
