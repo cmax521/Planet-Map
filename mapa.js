@@ -1,57 +1,13 @@
 // ==UserScript==
-// @name         NOME MINIMAPA AQUI
+// @name         Brasil-Planet Map
 // @namespace    http://tampermonkey.net/
 // @version      2.0
-// @description  NOME MINIMAPA AQUI
+// @description  Brasil-Planet Map
 // @author       SrObsidian - favor nao remover
 // @match        https://pixelplanet.fun/*
 // @match        https://pixelplanet.fun/*
 // @grant        none
 // ==/UserScript==
-/*			DARK CREW
-                                                `-:ooyhhhMMMMMMMMMMmhhhoo+--                           \
-                                          .-+hdMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmh+/-`                    \
-                                      ./smMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNho-`                \
-                                  `/ymMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNho.             \
-                               `ohNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdo.          \
-                            `odMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNhhhhhhdNNMMMMMMMMMMd/.       \
-                          `sNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms.        .:+ymMMMMMMMNs.     \
-                        `sNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs            ./yMMMMMMMs.   \
-                       :NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/             ./dMMMMMM   \
-                     `hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs               :hNMm+   \
-                    .mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh.               ``     \
-                   .mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm.                     \
-                  `mMMMMMMMMMMMMMMMMMMMMMMMMNy+:.....:+ydMMMMMMMMMMMMMMMMMMMMMMMMd`                    \
-                  sMMMMMMMMMMMMMMMMMMMMMMNo-             .odMMMMMMMMMMMMMMMMMMMMMMy                    \
-                 -MMMMMMMMMMMMMMMMMMMMMNo                   :NMMMMMMMMMMMMMMMMMMMMN-                   \
-                 hMMMMMMMMMMMMMMMMMMMMm.                     .mMMMMMMMMMMMMMMMMMMMMy                   \
-                .mMMMMMMMMMMMMMMMMMMMm.                       .mMMMMMMMMMMMMMMMMMMMm.                  \
-                -MMMMMMMMMMMMMMMMMMMM/                         :MMMMMMMMMMMMMMMMMMMM:                  \
-                -MMMMMMMMMMMMMMMMMMMM.                         .MMMMMMMMMMMMMMMMMMMM:                  \
-                -MMMMMMMMMMMMMMMMMMMM.                         .MMMMMMMMMMMMMMMMMMMM:                  \
-                -MMMMMMMMMMMMMMMMMMMMy                         sMMMMMMMMMMMMMMMMMMMM:                  \
-                 hMMMMMMMMMMMMMMMMMMMM/                       /MMMMMMMMMMMMMMMMMMMMd                   \
-                 +MMMMMMMMMMMMMMMMMMMMMs`                   `sMMMMMMMMMMMMMMMMMMMMMo                   \
-                 `mMMMMMMMMMMMMMMMMMMMMMN+`               `:dMMMMMMMMMMMMMMMMMMMMMm.                   \
-                  :NMMMMMMMMMMMMMMMMMMMMMMNh+-         -:hNMMMMMMMMMMMMMMMMMMMMMMM/                    \
-                   +MMMMMMMMMMMMMMMMMMMMMMMMMMNmyyyyymNMMMMMMMMMMMMMMMMMMMMMMMMMMo                     \
-                    +MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo                      \
-  ``                 :NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN+                       \
-+mMMd:                -dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd-                        \
-MMMMMMdo.               +NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs                          \
-.sMMMMMMMh/.             `oNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs`                           \
-  .sNMMMMMMMmy+:.          `oNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs`                             \
-    `:dMMMMMMMMMMNNdhhhhhhdNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd:`                               \
-       .odMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMho`                                  \
-          .ohNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh/.                                     \
-             `-ohNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNho-`                                        \
-                  -/+hmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdh+/.                                             \
-                        --+oohhhmMMMMMMMMMMmhhhoo+--                                                   \
-*/
-
-//-----------------------------------------------
-
-//-----------------------------------------------
 
 var stle = document.createElement('style');
 stle.innerHTML ='.palettebox {text-align: center;vertical-align: middle;line-height: 0;padding: 3px;position: absolute;right: 50%;height: 18em;width: 3em;top: 72%; transform: rotate(90deg);margin-left: auto;margin-right: auto;display: flex;flex-wrap: wrap-reverse;}';
@@ -63,7 +19,7 @@ Number.prototype.between = function(a, b) {
   return this > min && this < max;
 };
 var rangeValue = 220;
-window.baseTepmlateUrl = 'https://darkcrew.000webhostapp.com/darktemplates/';
+window.baseTepmlateUrl = 'https://raw.githubusercontent.com/AsumaGc/Planet-Map/master';
 
 window.addEventListener('load', function () {
     //Regular Expression to get coordinates out of URL
@@ -100,18 +56,18 @@ window.addEventListener('load', function () {
 
     var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
-    div.innerHTML = '<div id="minimapbg" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;position: absolute; right: 1em; bottom: 1em;z-index: 99999;">' +
-        '<div class="posy" id="posyt" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;background-size: 100%; background-color: #313131; background-image: url(https://i.imgur.com/cRvapNA.png); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
-        '<div id="minimap-text" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;display: none;"></div>' +
-        '<div id="minimap-box" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;position: relative;width:420px;height:300px">' +
-        '<canvas id="minimap" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas>' +
-        '<canvas id="minimap-board" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas>' +
-        '<canvas id="minimap-cursor" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
-        '</div><div id="minimap-config" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;line-height:20px;">' +
-        '<span id="hide-map" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;cursor:pointer;">Ocultar mapa' +
-        '</span> | <span id="follow-mouse" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;cursor:pointer;"Seguir Mouse' +
-        '</span> | Zoom: <span id="zoom-plus" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;cursor:pointer;font-weight:bold;">+</span>  /  ' +
-        '<span id="zoom-minus" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;cursor:pointer;font-weight:bold;">-</span>' +
+    div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;">' +
+        '<div class="posy" id="posyt" style="-webkit-user-drag: none;-khtml-user-drag: none;-moz-user-drag: none;-o-user-drag: none;user-drag: none;background-size: 100%; background-color: #313131; background-image: url(https://cdn.discordapp.com/attachments/527294050668380170/565725155821617162/tempBackground.png); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
+        '<div id="minimap-text" style="display: none;"></div>' +
+        '<div id="minimap-box" style="position: relative;width:420px;height:300px">' +
+        '<canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas>' +
+        '<canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas>' +
+        '<canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
+        '</div><div id="minimap-config" style="line-height:20px;">' +
+        '<span id="hide-map" style="cursor:pointer;">Esconder' +
+        '</span> | <span id="follow-mouse" style="cursor:pointer;">Seguir Mouse' +
+        '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
+        '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
         '</div>' +
         '</div>';
     document.body.appendChild(div);
