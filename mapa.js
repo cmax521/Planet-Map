@@ -6,6 +6,8 @@
 // @author       SrObsidian - favor nao remover
 // @match        https://pixelplanet.fun/*
 // @match        https://pixelplanet.fun/*
+// @updateURL    https://raw.githubusercontent.com/AsumaGc/Planet-Map/master/mapa.js
+// @downloadURL  https://raw.githubusercontent.com/AsumaGc/Planet-Map/master/mapa.js
 // @grant        none
 // ==/UserScript==
 
