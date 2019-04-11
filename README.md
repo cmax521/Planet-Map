@@ -10,4 +10,4 @@
 
 
 #### Passo 2: Instalar o minimap
-[Clique aqui](https://github.com/AsumaGc/Brasil-Place/raw/master/minimap.user.js)
+[Clique aqui](https://github.com/AsumaGc/Planet-Map/raw/master/mapa.js)
