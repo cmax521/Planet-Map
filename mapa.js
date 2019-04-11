@@ -21,7 +21,7 @@ Number.prototype.between = function(a, b) {
   return this > min && this < max;
 };
 var rangeValue = 220;
-window.baseTepmlateUrl = 'https://raw.githubusercontent.com/AsumaGc/Planet-Map/master';
+window.baseTepmlateUrl = 'https://raw.githubusercontent.com/AsumaGC/Planet-Map/master/';
 
 window.addEventListener('load', function () {
     //Regular Expression to get coordinates out of URL
@@ -172,7 +172,7 @@ function updateloop() {
     console.log("Updating Template List");
     // Get JSON of available templates
     var xmlhttp = new XMLHttpRequest();
-    var url = window.baseTepmlateUrl + "/templates/data.json" + new Date().getTime();
+    var url = window.baseTepmlateUrl + "templates/data.json" + new Date().getTime();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             template_list = JSON.parse(this.responseText);
