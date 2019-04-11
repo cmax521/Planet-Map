@@ -1,10 +1,10 @@
 {
   "PixelCanvas Faction Board": {
-    "name": "Misc_FactionBoard.png",
-    "x": -140,
-    "y":  -619,
-    "width": 707,
-    "height": 423
+    "name": "protect2.png",
+    "x": -9308,
+    "y":  1490,
+    "width": 1781,
+    "height": 582
   },
   "Chrono Trigger": {
     "name": "ChronoTrigger.png",
@@ -12,55 +12,6 @@
     "y":  846,
     "width": 153,
     "height": 40
-  },
-  "Crab Island": {
-    "name": "CrabIsland.png",
-    "x": 593,
-    "y":  -23,
-    "width": 256,
-    "height": 144
-  },
-  "DBZ Characters": {
-    "name": "DBZ.png",
-    "x": 1003,
-    "y":  -837,
-    "width": 237,
-    "height": 222
-  },
-  "Linkin Park": {
-    "name": "LinkinPark.png",
-    "x": 1228,
-    "y": -758,
-    "width": 40,
-    "height": 40
-},
-  "Solar System": {
-    "name": "SolarSystem.png",
-    "x": 9111,
-    "y":  -3851,
-    "width": 700,
-    "height": 700
-  },
-  "SpaceCanvas Center": {
-    "name": "SpaceCanvasCenter.png",
-    "x": 782,
-    "y":  -182,
-    "width": 200,
-    "height": 200
-},
-  "SpaceCanvas Invite": {
-    "name": "SpaceCanvasInvite.png",
-    "x": 9493,
-    "y":  -3676,
-    "width": 170,
-    "height": 56
-},
-  "Trumpepe": {
-    "name": "Trumpepe.png",
-    "x": -2834,
-    "y":  2841,
-    "width": 171,
-    "height": 165
 }
   
 }
