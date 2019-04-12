@@ -1,4 +1,4 @@
-# Brasil-Place Minimap
+# Império Brasil Planet
 
 ### Como instalar
 #### Passo 1: Download tampermonkey
