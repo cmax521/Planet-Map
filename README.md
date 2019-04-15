@@ -10,4 +10,4 @@
 
 
 #### Passo 2: Instalar o minimap
-[Clique aqui](https://github.com/AsumaGc/Planet-Map/raw/master/mapa.js)
+* [Clique aqui](https://github.com/AsumaGc/Planet-Map/raw/master/mapa.js)
