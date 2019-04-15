@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         Imperio Brasil Planet!
 // @namespace    Discord.io/Brasil-Place
-// @version      1.0.0
+// @version      2.0.0
 // @description  Minimapa criado para a facção Imperio Brasil Planet
-// @coder        sʀᴏʙsɪᴅɪᴀɴ#7569
-// @Edited       Aѕυмα#0785
+// @coder        Equipe de desenvolvimento Império Brasil Planet
 // @match        https://pixelplanet.fun/*
 // @match        http://pixelplanet.fun/*
 // @homepage     Discord.io/Brasil-Place
@@ -12,4 +11,388 @@
 // @downloadURL  http://raw.githubusercontent.com/AsumaGC/Planet-Map/master/minimap.user.js
 // ==/UserScript==
 
-var _0x334a=['Mostrar\x20mapa','cursor','pointer','onclick','default','zoom-plus','mousedown','preventDefault','mouseup','zoom-minus','mousemove','coorbox','split','substring','Updating\x20Template\x20List','readyState','status','parse','responseText','open','send','log','minimap-box','minimapbg','Show\x20Minimap','push','length','between','\x20\x20\x20\x20Load\x20image\x20','images/','name','onload','clearRect','drawImage','.png\x20[Pos:','beginPath','moveTo','lineTo','strokeStyle','lineWidth','red','stroke','href','replace','*[style]','coords','createElement','innerHTML','.palettebox\x20{text-align:\x20center;vertical-align:\x20middle;line-height:\x200;padding:\x203px;position:\x20absolute;right:\x2050%;height:\x2018em;width:\x203em;top:\x2072%;\x20transform:\x20rotate(90deg);margin-left:\x20auto;margin-right:\x20auto;display:\x20flex;flex-wrap:\x20wrap-reverse;}','body','appendChild','prototype','min','apply','max','baseTepmlateUrl','addEventListener','getElementById','gameWindow','setAttribute','class','<div\x20id=\x22minimapbg\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;position:\x20absolute;\x20right:\x201em;\x20bottom:\x201em;z-index:\x2099999;\x22>','<div\x20class=\x22posy\x22\x20id=\x22posyt\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;background-size:\x20100%;\x20background-color:\x20#313131;\x20background-image:\x20url(https://media.discordapp.net/attachments/527294050668380170/565725155821617162/tempBackground.png?width=300&height=300);\x20color:\x20rgb(250,\x20250,\x20250);\x20text-align:\x20center;\x20line-height:\x2042px;\x20vertical-align:\x20middle;\x20width:\x20auto;\x20height:\x20auto;\x20border-radius:\x2021px;\x20padding:\x206px;\x22>','<div\x20id=\x22minimap-text\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;display:\x20none;\x22></div>','<div\x20id=\x22minimap-box\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;position:\x20relative;width:420px;height:300px\x22>','<canvas\x20id=\x22minimap-board\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;width:\x20100%;\x20height:\x20100%;z-index:2;position:absolute;top:0;left:0;\x22></canvas>','</div><div\x20id=\x22minimap-config\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;line-height:20px;\x22>','</span>\x20|\x20<span\x20id=\x22follow-mouse\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;cursor:pointer;\x22Seguir\x20Mouse','</span>\x20|\x20Zoom:\x20<span\x20id=\x22zoom-plus\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;cursor:pointer;font-weight:bold;\x22>+</span>\x20\x20/\x20\x20','<span\x20id=\x22zoom-minus\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;cursor:pointer;font-weight:bold;\x22>-</span>','</div>','minimap','floor','width','minimap-board','minimap-cursor','offsetWidth','height','offsetHeight','getContext','mozImageSmoothingEnabled','webkitImageSmoothingEnabled','msImageSmoothingEnabled','imageSmoothingEnabled','hide-map','style','minimap-config','display','none','minimap-text','block'];(function(_0xb479be,_0x4bb6ab){var _0x44c2ed=function(_0x39774b){while(--_0x39774b){_0xb479be['push'](_0xb479be['shift']());}};_0x44c2ed(++_0x4bb6ab);}(_0x334a,0x89));var _0x58f7=function(_0x5f21c8,_0x1da67a){_0x5f21c8=_0x5f21c8-0x0;var _0x12237c=_0x334a[_0x5f21c8];return _0x12237c;};var stle=document[_0x58f7('0x0')]('style');stle[_0x58f7('0x1')]=_0x58f7('0x2');document[_0x58f7('0x3')][_0x58f7('0x4')](stle);Number[_0x58f7('0x5')]['between']=function(_0x449a3f,_0x2b4ce7){var _0xa074bb=Math[_0x58f7('0x6')][_0x58f7('0x7')](Math,[_0x449a3f,_0x2b4ce7]),_0x248ed2=Math[_0x58f7('0x8')][_0x58f7('0x7')](Math,[_0x449a3f,_0x2b4ce7]);return this>_0xa074bb&&this<_0x248ed2;};var rangeValue=0xdc;window[_0x58f7('0x9')]='https://raw.githubusercontent.com/AsumaGC/Planet-Map/master/';window[_0x58f7('0xa')]('load',function(){re=/(.*)\/\?p=(\-?(?:\d*)),(\-?(?:\d*))/g;rec=/x\:(\d*) y\:(\d*)/g;gameWindow=document[_0x58f7('0xb')](_0x58f7('0xc'));coorDOM=null;findCoor();x_window=0x0;y_window=0x0;x=0x0;y=0x0;template_list=null;zoomlevel=0x9;toggle_show=!![];toggle_follow=!![];zooming_in=![];zooming_out=![];zoom_time=0x64;image_list=[];counter=0x0;needed_templates=null;cachebreaker=null;var _0x213730=document[_0x58f7('0x0')]('div');_0x213730[_0x58f7('0xd')](_0x58f7('0xe'),'post\x20block\x20bc2');_0x213730[_0x58f7('0x1')]=_0x58f7('0xf')+_0x58f7('0x10')+_0x58f7('0x11')+_0x58f7('0x12')+'<canvas\x20id=\x22minimap\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;width:\x20100%;\x20height:\x20100%;z-index:1;position:absolute;top:0;left:0;\x22></canvas>'+_0x58f7('0x13')+'<canvas\x20id=\x22minimap-cursor\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;width:\x20100%;\x20height:\x20100%;z-index:3;position:absolute;top:0;left:0;\x22></canvas>'+_0x58f7('0x14')+'<span\x20id=\x22hide-map\x22\x20style=\x22-webkit-user-drag:\x20none;-khtml-user-drag:\x20none;-moz-user-drag:\x20none;-o-user-drag:\x20none;user-drag:\x20none;cursor:pointer;\x22>Ocultar\x20mapa'+_0x58f7('0x15')+_0x58f7('0x16')+_0x58f7('0x17')+_0x58f7('0x18')+_0x58f7('0x18');document[_0x58f7('0x3')][_0x58f7('0x4')](_0x213730);minimap=document[_0x58f7('0xb')](_0x58f7('0x19'));range=Math[_0x58f7('0x1a')](minimap[_0x58f7('0x1b')]/0x2*(0x1/zoomlevel)-0x1);minimap_board=document[_0x58f7('0xb')](_0x58f7('0x1c'));minimap_cursor=document['getElementById'](_0x58f7('0x1d'));minimap[_0x58f7('0x1b')]=minimap[_0x58f7('0x1e')];minimap_board[_0x58f7('0x1b')]=minimap_board['offsetWidth'];minimap_cursor[_0x58f7('0x1b')]=minimap_cursor[_0x58f7('0x1e')];minimap[_0x58f7('0x1f')]=minimap['offsetHeight'];minimap_board['height']=minimap_board[_0x58f7('0x20')];minimap_cursor[_0x58f7('0x1f')]=minimap_cursor[_0x58f7('0x20')];ctx_minimap=minimap[_0x58f7('0x21')]('2d');ctx_minimap_board=minimap_board['getContext']('2d');ctx_minimap_cursor=minimap_cursor[_0x58f7('0x21')]('2d');ctx_minimap[_0x58f7('0x22')]=![];ctx_minimap[_0x58f7('0x23')]=![];ctx_minimap[_0x58f7('0x24')]=![];ctx_minimap[_0x58f7('0x25')]=![];drawBoard();drawCursor();document[_0x58f7('0xb')](_0x58f7('0x26'))['onclick']=function(){toggle_show=![];document[_0x58f7('0xb')]('minimap-box')[_0x58f7('0x27')]['display']='none';document[_0x58f7('0xb')](_0x58f7('0x28'))[_0x58f7('0x27')][_0x58f7('0x29')]=_0x58f7('0x2a');document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x27')]['display']=_0x58f7('0x2c');document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x1')]=_0x58f7('0x2d');document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x27')][_0x58f7('0x2e')]=_0x58f7('0x2f');};document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x30')]=function(){toggle_show=!![];document['getElementById']('minimap-box')[_0x58f7('0x27')][_0x58f7('0x29')]=_0x58f7('0x2c');document[_0x58f7('0xb')](_0x58f7('0x28'))[_0x58f7('0x27')][_0x58f7('0x29')]=_0x58f7('0x2c');document['getElementById']('minimap-text')[_0x58f7('0x27')][_0x58f7('0x29')]='none';document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x27')][_0x58f7('0x2e')]=_0x58f7('0x31');loadTemplates();};document[_0x58f7('0xb')](_0x58f7('0x32'))[_0x58f7('0xa')](_0x58f7('0x33'),function(_0x210e55){_0x210e55[_0x58f7('0x34')]();zooming_in=!![];zooming_out=![];zoomIn();},![]);document['getElementById']('zoom-minus')[_0x58f7('0xa')](_0x58f7('0x33'),function(_0x3d57dc){_0x3d57dc[_0x58f7('0x34')]();zooming_out=!![];zooming_in=![];zoomOut();},![]);document[_0x58f7('0xb')]('zoom-plus')[_0x58f7('0xa')](_0x58f7('0x35'),function(_0x32d343){zooming_in=![];},![]);document[_0x58f7('0xb')](_0x58f7('0x36'))[_0x58f7('0xa')](_0x58f7('0x35'),function(_0x4c67eb){zooming_out=![];},![]);gameWindow=document[_0x58f7('0xb')](_0x58f7('0xc'));gameWindow[_0x58f7('0xa')]('mouseup',function(_0x5783b6){if(!toggle_show)return;if(!toggle_follow)setTimeout(getCenter,0x64);},![]);gameWindow[_0x58f7('0xa')](_0x58f7('0x37'),function(_0x1319d6){if(!toggle_show)return;coorDOM=document['getElementsByClassName'](_0x58f7('0x38'))[0x0]['innerHTML'];coordsXY=coorDOM[_0x58f7('0x39')](/(\d+)/);x_new=(coordsXY[0x0][_0x58f7('0x3a')](0x1)+coordsXY[0x1])*0x1;y_new=(coordsXY[0x2][_0x58f7('0x3a')](0x1)+coordsXY[0x3])*0x1;if(x!=x_new||y!=y_new){x=parseInt(x_new);y=parseInt(y_new);if(toggle_follow){x_window=x;y_window=y;}else{drawCursor();}loadTemplates();}},![]);updateloop();},![]);function updateloop(){console['log'](_0x58f7('0x3b'));var _0x4991b4=new XMLHttpRequest();var _0x3706e3=window[_0x58f7('0x9')]+'templates/data.json?'+new Date()['getTime']();_0x4991b4['onreadystatechange']=function(){if(this[_0x58f7('0x3c')]==0x4&&this[_0x58f7('0x3d')]==0xc8){template_list=JSON[_0x58f7('0x3e')](this[_0x58f7('0x3f')]);if(!toggle_follow)getCenter();}};_0x4991b4[_0x58f7('0x40')]('GET',_0x3706e3,!![]);_0x4991b4[_0x58f7('0x41')]();console[_0x58f7('0x42')]('Refresh\x20got\x20forced.');image_list=[];loadTemplates();setTimeout(updateloop,0xea60);}function toggleShow(){toggle_show=!toggle_show;if(toggle_show){document[_0x58f7('0xb')](_0x58f7('0x43'))[_0x58f7('0x27')][_0x58f7('0x29')]=_0x58f7('0x2c');document[_0x58f7('0xb')](_0x58f7('0x28'))[_0x58f7('0x27')][_0x58f7('0x29')]=_0x58f7('0x2c');document[_0x58f7('0xb')]('minimap-text')[_0x58f7('0x27')]['display']='none';document[_0x58f7('0xb')](_0x58f7('0x44'))[_0x58f7('0x30')]=function(){};loadTemplates();}else{document[_0x58f7('0xb')]('minimap-box')[_0x58f7('0x27')][_0x58f7('0x29')]='none';document[_0x58f7('0xb')](_0x58f7('0x28'))[_0x58f7('0x27')][_0x58f7('0x29')]='none';document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x27')][_0x58f7('0x29')]='block';document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x1')]=_0x58f7('0x45');document[_0x58f7('0xb')](_0x58f7('0x44'))[_0x58f7('0x30')]=function(){toggleShow();};}}function zoomIn(){if(!zooming_in)return;zoomlevel=zoomlevel*1.1;range=Math[_0x58f7('0x1a')](minimap['width']/0x2*(0x1/zoomlevel)-0x1);if(zoomlevel>0x2d){zoomlevel=0x2d;return;}drawBoard();drawCursor();loadTemplates();setTimeout(zoomIn,zoom_time);}function zoomOut(){if(!zooming_out)return;zoomlevel=zoomlevel/1.1;range=Math[_0x58f7('0x1a')](minimap[_0x58f7('0x1b')]/0x2*(0x1/zoomlevel)-0x1);if(zoomlevel<0x1){zoomlevel=0x1;return;}drawBoard();drawCursor();loadTemplates();setTimeout(zoomOut,zoom_time);}function loadTemplates(){if(!toggle_show)return;if(template_list==null)return;var _0x1c8c02=x_window*0x1-minimap[_0x58f7('0x1b')]/zoomlevel/0x2;var _0x2eb1d3=x_window*0x1+minimap[_0x58f7('0x1b')]/zoomlevel/0x2;var _0x34d283=y_window*0x1-minimap[_0x58f7('0x1f')]/zoomlevel/0x2;var _0x9c269a=y_window*0x1+minimap[_0x58f7('0x1f')]/zoomlevel/0x2;var _0x32b758=[];for(var _0x242231 in template_list)_0x32b758[_0x58f7('0x46')](_0x242231);needed_templates=[];var _0x22a373;for(_0x22a373=0x0;_0x22a373<_0x32b758[_0x58f7('0x47')];_0x22a373++){template=_0x32b758[_0x22a373];var _0x95c945=parseInt(template_list[template]['x'])*0x1;var _0x2a136d=parseInt(template_list[template]['y'])*0x1;var _0x5af1fa=parseInt(template_list[template]['x'])+parseInt(template_list[template][_0x58f7('0x1b')]);var _0x65dc47=parseInt(template_list[template]['y'])+parseInt(template_list[template][_0x58f7('0x1f')]);if(!x_window[_0x58f7('0x48')](_0x95c945-range*0x1,_0x5af1fa+range*0x1))continue;if(!y_window['between'](_0x2a136d-range*0x1,_0x65dc47+range*0x1))continue;needed_templates[_0x58f7('0x46')](template);}if(needed_templates['length']==0x0){if(zooming_in==![]&&zooming_out==![]){document[_0x58f7('0xb')](_0x58f7('0x43'))[_0x58f7('0x27')][_0x58f7('0x29')]=_0x58f7('0x2a');document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x27')][_0x58f7('0x29')]='block';document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x1')]='|\x20\x20Nada\x20aqui\x20\x20|';}}else{document[_0x58f7('0xb')](_0x58f7('0x43'))[_0x58f7('0x27')][_0x58f7('0x29')]='block';document[_0x58f7('0xb')](_0x58f7('0x2b'))[_0x58f7('0x27')][_0x58f7('0x29')]=_0x58f7('0x2a');counter=0x0;for(_0x22a373=0x0;_0x22a373<needed_templates[_0x58f7('0x47')];_0x22a373++){if(image_list[needed_templates[_0x22a373]]==null){loadImage(needed_templates[_0x22a373]);}else{counter+=0x1;if(counter==needed_templates[_0x58f7('0x47')])drawTemplates();}}}}function loadImage(_0x67367c){console['log'](_0x58f7('0x49')+_0x67367c);image_list[_0x67367c]=new Image();if(cachebreaker!=null)image_list[_0x67367c]['src']=window[_0x58f7('0x9')]+_0x58f7('0x4a')+template_list[_0x67367c][_0x58f7('0x4b')];else image_list[_0x67367c]['src']=window[_0x58f7('0x9')]+_0x58f7('0x4a')+template_list[_0x67367c][_0x58f7('0x4b')];image_list[_0x67367c][_0x58f7('0x4c')]=function(){counter+=0x1;if(counter==needed_templates[_0x58f7('0x47')])drawTemplates();};}function drawTemplates(){ctx_minimap[_0x58f7('0x4d')](0x0,0x0,minimap['width'],minimap[_0x58f7('0x1f')]);var _0x1a7561=x_window*0x1-minimap[_0x58f7('0x1b')]/zoomlevel/0x2;var _0x43dc9a=y_window*0x1-minimap[_0x58f7('0x1f')]/zoomlevel/0x2;var _0x34d919;for(_0x34d919=0x0;_0x34d919<needed_templates[_0x58f7('0x47')];_0x34d919++){var _0x52057e=needed_templates[_0x34d919];var _0x3810bb=(template_list[_0x52057e]['x']*0x1-_0x1a7561*0x1)*zoomlevel;var _0x422d1c=(template_list[_0x52057e]['y']*0x1-_0x43dc9a*0x1)*zoomlevel;var _0x3d07fb=zoomlevel*image_list[_0x52057e][_0x58f7('0x1b')];var _0x2b1809=zoomlevel*image_list[_0x52057e][_0x58f7('0x1f')];var _0x4f6029=image_list[_0x52057e];ctx_minimap[_0x58f7('0x4e')](_0x4f6029,_0x3810bb,_0x422d1c,_0x3d07fb,_0x2b1809);console['log'](_0x52057e+_0x58f7('0x4f'),template_list[_0x52057e]['x'],template_list[_0x52057e]['y']+']');}}function drawBoard(){ctx_minimap_board[_0x58f7('0x4d')](0x0,0x0,minimap_board[_0x58f7('0x1b')],minimap_board[_0x58f7('0x1f')]);if(zoomlevel<=4.6)return;ctx_minimap_board[_0x58f7('0x50')]();var _0x549cfd=minimap_board[_0x58f7('0x1b')]+zoomlevel;var _0x17c428=minimap_board[_0x58f7('0x1f')]+zoomlevel;var _0x41e47e=minimap[_0x58f7('0x1b')]/0x2%zoomlevel-zoomlevel;var _0x2e982a=minimap[_0x58f7('0x1f')]/0x2%zoomlevel-zoomlevel;var _0x4e6f40=0x1*zoomlevel;for(var _0x1d6505=0x0;_0x1d6505<=_0x549cfd;_0x1d6505+=_0x4e6f40){ctx_minimap_board[_0x58f7('0x51')](_0x1d6505+_0x41e47e,_0x2e982a);ctx_minimap_board[_0x58f7('0x52')](_0x1d6505+_0x41e47e,_0x17c428+_0x2e982a);}for(var _0x1d6505=0x0;_0x1d6505<=_0x17c428;_0x1d6505+=_0x4e6f40){ctx_minimap_board[_0x58f7('0x51')](_0x41e47e,_0x1d6505+_0x2e982a);ctx_minimap_board[_0x58f7('0x52')](_0x549cfd+_0x41e47e,_0x1d6505+_0x2e982a);}ctx_minimap_board[_0x58f7('0x53')]='black';ctx_minimap_board['stroke']();}function drawCursor(){var _0x599a4a=x_window*0x1-minimap[_0x58f7('0x1b')]/zoomlevel/0x2;var _0x59ad92=x_window*0x1+minimap[_0x58f7('0x1b')]/zoomlevel/0x2;var _0x156489=y_window*0x1-minimap[_0x58f7('0x1f')]/zoomlevel/0x2;var _0x3d5726=y_window*0x1+minimap[_0x58f7('0x1f')]/zoomlevel/0x2;ctx_minimap_cursor[_0x58f7('0x4d')](0x0,0x0,minimap_cursor[_0x58f7('0x1b')],minimap_cursor['height']);if(x<_0x599a4a||x>_0x59ad92||y<_0x156489||y>_0x3d5726)return;xoff_c=x-_0x599a4a;yoff_c=y-_0x156489;ctx_minimap_cursor[_0x58f7('0x50')]();ctx_minimap_cursor[_0x58f7('0x54')]=zoomlevel/0x3;ctx_minimap_cursor[_0x58f7('0x53')]=_0x58f7('0x55');ctx_minimap_cursor['rect'](zoomlevel*xoff_c,zoomlevel*yoff_c,zoomlevel,zoomlevel);ctx_minimap_cursor[_0x58f7('0x56')]();}function getCenter(){var _0x3101d0=window['location'][_0x58f7('0x57')];x_window=_0x3101d0[_0x58f7('0x58')](re,'$2');y_window=_0x3101d0['replace'](re,'$3');if(x_window==_0x3101d0||y_window==_0x3101d0){x_window=0x0;y_window=0x0;}loadTemplates();}function findCoor(){var _0x36be83=document['querySelectorAll'](_0x58f7('0x59'));coorDOM=document[_0x58f7('0xb')](_0x58f7('0x5a'));}
+// ╔══╗──────────╔╗───  ╔══╗───────╔═╗╔╗───  ╔═╗──────────────╔╗─
+// ╚║║╝╔══╗╔═╗╔╦╗╠╣╔═╗  ║╔╗║╔╦╗╔═╗─║═╣╠╣╔╗─  ║╬║╔╗─╔═╗─╔═╦╗╔═╗║╚╗
+// ╔║║╗║║║║║╬║║╔╝║║║╬║  ║╔╗║║╔╝║╬╚╗╠═║║║║╚╗  ║╔╝║╚╗║╬╚╗║║║║║╩╣║╔╣
+// ╚══╝╚╩╩╝║╔╝╚╝─╚╝╚═╝  ╚══╝╚╝─╚══╝╚═╝╚╝╚═╝  ╚╝─╚═╝╚══╝╚╩═╝╚═╝╚═╝
+// ────────╚╝─────────  ───────────────────  ────────────────────
+
+Number.prototype.between = function(a, b) {
+  var min = Math.min.apply(Math, [a, b]),
+    max = Math.max.apply(Math, [a, b]);
+  return this > min && this < max;
+};
+var range = 25;
+window.baseTepmlateUrl = 'https://raw.githubusercontent.com/AsumaGC/Planet-Map/master/';
+
+window.addEventListener('load', function () {
+    //Regular Expression to get coordinates out of URL
+    re = /(.*)\/\?p=(\-?(?:\d*)),(\-?(?:\d*))/g;
+    //Regular Expression to get coordinates from cursor
+    rec = /x\:(\d*) y\:(\d*)/g;
+    gameWindow = document.getElementById("gameWindow");
+    //DOM element of the displayed X, Y variables
+    coorDOM = null;
+    findCoor();
+    //coordinates of the middle of the window
+    x_window = 0;
+    y_window = 0;
+    //coordinates of cursor
+    x = 0;
+    y = 0;
+    //list of all available templates
+    template_list = null;
+    zoomlevel = 9;
+    //toggle options
+    toggle_show = true;
+    toggle_follow = true; //if minimap is following window, x_window = x and y_window = y;
+    zooming_in = false;
+    zooming_out = false;
+    zoom_time = 100;
+    //array with all loaded template-images
+    image_list = [];
+    counter = 0;
+    //templates which are needed in the current area
+    needed_templates = null;
+    //Cachebreaker to force refresh
+    cachebreaker = null;
+
+    var div = document.createElement('div');
+    div.setAttribute('class', 'post block bc2');
+    div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;">' +
+        '<div class="posy" id="posyt" style="background-color: rgba(0, 0, 0, 0.75); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
+        '<div id="minimap-text" style="display: none;"></div>' +
+        '<div id="minimap-box" style="position: relative;width:420px;height:300px">' +
+        '<canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas>' +
+        '<canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas>' +
+        '<canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
+        '</div><div id="minimap-config" style="line-height:20px;">' +
+        '<span id="hide-map" style="cursor:pointer;"> Minimizar' +
+        '</span> | <span id="follow-mouse" style="cursor:pointer;"Seguir o mouse' +
+        '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
+        '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
+        '</div>' +
+        '</div>';
+    document.body.appendChild(div);
+    minimap = document.getElementById("minimap");
+    minimap_board = document.getElementById("minimap-board");
+    minimap_cursor = document.getElementById("minimap-cursor");
+    minimap.width = minimap.offsetWidth;
+    minimap_board.width = minimap_board.offsetWidth;
+    minimap_cursor.width = minimap_cursor.offsetWidth;
+    minimap.height = minimap.offsetHeight;
+    minimap_board.height = minimap_board.offsetHeight;
+    minimap_cursor.height = minimap_cursor.offsetHeight;
+    ctx_minimap = minimap.getContext("2d");
+    ctx_minimap_board = minimap_board.getContext("2d");
+    ctx_minimap_cursor = minimap_cursor.getContext("2d");
+
+    //No Antialiasing when scaling!
+    ctx_minimap.mozImageSmoothingEnabled = false;
+    ctx_minimap.webkitImageSmoothingEnabled = false;
+    ctx_minimap.msImageSmoothingEnabled = false;
+    ctx_minimap.imageSmoothingEnabled = false;
+
+    drawBoard();
+    drawCursor();
+
+    document.getElementById("hide-map").onclick = function () {
+        console.log("This should do something, but it doesn't");
+        toggle_show = false;
+        document.getElementById("minimap-box").style.display = "none";
+        document.getElementById("minimap-config").style.display = "none";
+        document.getElementById("minimap-text").style.display = "block";
+        document.getElementById("minimap-text").innerHTML = "Mostrar Minimapa";
+        document.getElementById("minimap-text").style.cursor = "pointer";
+    };
+    document.getElementById("minimap-text").onclick = function () {
+        toggle_show = true;
+        document.getElementById("minimap-box").style.display = "block";
+        document.getElementById("minimap-config").style.display = "block";
+        document.getElementById("minimap-text").style.display = "none";
+        document.getElementById("minimap-text").style.cursor = "default";
+        loadTemplates();
+    };
+    document.getElementById("zoom-plus").addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        zooming_in = true;
+        zooming_out = false;
+        zoomIn();
+    }, false);
+    document.getElementById("zoom-minus").addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        zooming_out = true;
+        zooming_in = false;
+        zoomOut();
+    }, false);
+    document.getElementById("zoom-plus").addEventListener('mouseup', function (e) {
+        zooming_in = false;
+    }, false);
+    document.getElementById("zoom-minus").addEventListener('mouseup', function (e) {
+        zooming_out = false;
+    }, false); 
+    gameWindow = document.getElementById("gameWindow");
+    gameWindow.addEventListener('mouseup', function (evt) {
+        if (!toggle_show)
+            return;
+        if (!toggle_follow)
+            setTimeout(getCenter, 100);
+    }, false);
+
+    gameWindow.addEventListener('mousemove', function (evt) {
+        if (!toggle_show)
+            return;
+        coorDOM = document.getElementsByClassName("coorbox")[0];
+        coordsXY = coorDOM.innerHTML.split(/(-?\d+)/)
+        //console.log(coordsXY);
+        x_new = (coordsXY[0].substring(2) + coordsXY[1])*1
+        y_new = (coordsXY[2].substring(3) + coordsXY[3])*1;
+        //console.log({x_new,y_new});
+        if (x != x_new || y != y_new) {
+            x = parseInt(x_new);
+            y = parseInt(y_new);
+            if (toggle_follow) {
+                x_window = x;
+                y_window = y;
+            } else {
+                drawCursor();
+            }
+            loadTemplates();
+        }
+    }, false);
+
+    updateloop();
+
+}, false);
+
+function updateloop() {
+
+    console.log("Updating Template List");
+    // Get JSON of available templates
+    var xmlhttp = new XMLHttpRequest();
+    var url = window.baseTepmlateUrl + "templates/data.json?" + new Date().getTime();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            template_list = JSON.parse(this.responseText);
+            if (!toggle_follow)
+                getCenter();
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    console.log("Refresh got forced.");
+    image_list = [];
+    loadTemplates();
+
+    setTimeout(updateloop, 60000)
+}
+
+function toggleShow() {
+    toggle_show = !toggle_show;
+    if (toggle_show) {
+        document.getElementById("minimap-box").style.display = "block";
+        document.getElementById("minimap-config").style.display = "block";
+        document.getElementById("minimap-text").style.display = "none";
+        document.getElementById("minimapbg").onclick = function () {
+        };
+        loadTemplates();
+    } else {
+        document.getElementById("minimap-box").style.display = "none";
+        document.getElementById("minimap-config").style.display = "none";
+        document.getElementById("minimap-text").style.display = "block";
+        document.getElementById("minimap-text").innerHTML = "Mostrar Minimap";
+        document.getElementById("minimapbg").onclick = function () {
+            toggleShow()
+        };
+    }
+}
+
+function zoomIn() {
+    if (!zooming_in)
+        return;
+    zoomlevel = zoomlevel * 1.1;
+    if (zoomlevel > 45) {
+        zoomlevel = 45;
+        return;
+    }
+    drawBoard();
+    drawCursor();
+    loadTemplates();
+    setTimeout(zoomIn, zoom_time);
+}
+
+function zoomOut() {
+    if (!zooming_out)
+        return;
+    zoomlevel = zoomlevel / 1.1;
+    if (zoomlevel < 1) {
+        zoomlevel = 1;
+        return;
+    }
+    drawBoard();
+    drawCursor();
+    loadTemplates();
+    setTimeout(zoomOut, zoom_time);
+}
+
+function loadTemplates() {
+    if (!toggle_show)
+        return;
+    if (template_list == null)
+        return;
+
+    var x_left = x_window * 1 - minimap.width / zoomlevel / 2;
+    var x_right = x_window * 1 + minimap.width / zoomlevel / 2;
+    var y_top = y_window * 1 - minimap.height / zoomlevel / 2;
+    var y_bottom = y_window * 1 + minimap.height / zoomlevel / 2;
+    //console.log("x_left : " + x_left);
+    //console.log("x_right : " + x_right);
+    //console.log("y_top : " + y_top);
+    //console.log("y_bottom : " + y_bottom);
+    //console.log(template_list);
+    var keys = [];
+    for (var k in template_list) keys.push(k);
+    needed_templates = [];
+    var i;
+    for (i = 0; i < keys.length; i++) {
+        template = keys[i];
+
+        var temp_x = parseInt(template_list[template]["x"]) * 1;
+        var temp_y = parseInt(template_list[template]["y"]) * 1;
+        var temp_xr = parseInt(template_list[template]["x"]) + parseInt(template_list[template]["width"]);
+        var temp_yb = parseInt(template_list[template]["y"]) + parseInt(template_list[template]["height"]);
+        // if (temp_xr <= x_left || temp_yb <= y_top || temp_x >= x_right || temp_y >= y_bottom)
+        //    continue
+        console.log(x_window, y_window);
+        if (!x_window.between(temp_x-range*1, temp_xr+range*1))
+            continue
+        if (!y_window.between(temp_y-range*1, temp_yb+range*1))
+            continue
+        
+        needed_templates.push(template);
+    }
+    if (needed_templates.length == 0) {
+        if (zooming_in == false && zooming_out == false) {
+            document.getElementById("minimap-box").style.display = "none";
+            document.getElementById("minimap-text").style.display = "block";
+            document.getElementById("minimap-text").innerHTML = "Não tem nada aqui.";
+        }
+    } else {
+        document.getElementById("minimap-box").style.display = "block";
+        document.getElementById("minimap-text").style.display = "none";
+        counter = 0;
+        for (i = 0; i < needed_templates.length; i++) {
+            if (image_list[needed_templates[i]] == null) {
+                loadImage(needed_templates[i]);
+            } else {
+                counter += 1;
+                //if last needed image loaded, start drawing
+                if (counter == needed_templates.length)
+                    drawTemplates();
+            }
+        }
+    }
+}
+
+function loadImage(imagename) {
+    console.log("    Load image " + imagename);
+    image_list[imagename] = new Image();
+    if (cachebreaker != null)
+        image_list[imagename].src = window.baseTepmlateUrl +"images/"+template_list[imagename].name;
+    else
+        image_list[imagename].src = window.baseTepmlateUrl +"images/"+ template_list[imagename].name;
+    image_list[imagename].onload = function () {
+        counter += 1;
+        //if last needed image loaded, start drawing
+        if (counter == needed_templates.length)
+            drawTemplates();
+    }
+}
+
+function drawTemplates() {
+    ctx_minimap.clearRect(0, 0, minimap.width, minimap.height);
+    var x_left = x_window * 1 - minimap.width / zoomlevel / 2;
+    var y_top = y_window * 1 - minimap.height / zoomlevel / 2;
+    var i;
+    for (i = 0; i < needed_templates.length; i++) {
+        var template = needed_templates[i];
+        var xoff = (template_list[template]["x"] * 1 - x_left * 1) * zoomlevel;
+        var yoff = (template_list[template]["y"] * 1 - y_top * 1) * zoomlevel;
+        var newwidth = zoomlevel * image_list[template].width;
+        var newheight = zoomlevel * image_list[template].height;
+        var img = image_list[template];
+        ctx_minimap.drawImage(img, xoff, yoff, newwidth, newheight);
+
+    }
+}
+
+function drawBoard() {
+    ctx_minimap_board.clearRect(0, 0, minimap_board.width, minimap_board.height);
+    if (zoomlevel <= 4.6)
+        return;
+    ctx_minimap_board.beginPath();
+    var bw = minimap_board.width + zoomlevel;
+    var bh = minimap_board.height + zoomlevel;
+    var xoff_m = (minimap.width / 2) % zoomlevel - zoomlevel;
+    var yoff_m = (minimap.height / 2) % zoomlevel - zoomlevel;
+    var z = 1 * zoomlevel;
+
+    for (var x = 0; x <= bw; x += z) {
+        ctx_minimap_board.moveTo(x + xoff_m, yoff_m);
+        ctx_minimap_board.lineTo(x + xoff_m, bh + yoff_m);
+    }
+
+    for (var x = 0; x <= bh; x += z) {
+        ctx_minimap_board.moveTo(xoff_m, x + yoff_m);
+        ctx_minimap_board.lineTo(bw + xoff_m, x + yoff_m);
+    }
+    ctx_minimap_board.strokeStyle = "black";
+    ctx_minimap_board.stroke();
+}
+
+function drawCursor() {
+    var x_left = x_window * 1 - minimap.width / zoomlevel / 2;
+    var x_right = x_window * 1 + minimap.width / zoomlevel / 2;
+    var y_top = y_window * 1 - minimap.height / zoomlevel / 2;
+    var y_bottom = y_window * 1 + minimap.height / zoomlevel / 2;
+    ctx_minimap_cursor.clearRect(0, 0, minimap_cursor.width, minimap_cursor.height);
+    if (x < x_left || x > x_right || y < y_top || y > y_bottom)
+        return
+    xoff_c = x - x_left;
+    yoff_c = y - y_top;
+
+    ctx_minimap_cursor.beginPath();
+    ctx_minimap_cursor.lineWidth = zoomlevel / 3;
+    ctx_minimap_cursor.strokeStyle = "red";
+    ctx_minimap_cursor.rect(zoomlevel * xoff_c, zoomlevel * yoff_c, zoomlevel, zoomlevel);
+    ctx_minimap_cursor.stroke();
+
+}
+
+function getCenter() {
+    var url = window.location.href;
+    x_window = url.replace(re, '$2');
+    y_window = url.replace(re, '$3');
+    if (x_window == url || y_window == url) {
+        x_window = 0;
+        y_window = 0;
+    }
+    loadTemplates();
+}
+
+function findCoor() {
+    //all elements with style attributes
+    var elms = document.querySelectorAll("*[style]");
+    // Loop and find the element with the right style attributes
+    /*Array.prototype.forEach.call(elms, function (elm) {
+        var style = elm.style.cssText;
+        if (style == "position: absolute; left: 1em; bottom: 1em;") {
+            console.log("Found It!");
+            coorDOM = elm.firstChild;
+            console.log(coorDOM.innerHTML);
+        }
+    });*/
+    coorDOM = document.getElementsByClassName("coorbox")[0];
+}
+
