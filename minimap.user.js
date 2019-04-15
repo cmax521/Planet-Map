@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Imperio Brasil Planet!
 // @namespace    Discord.io/Brasil-Place
-// @version      2.0.0
+// @version      2.0.1
 // @description  Minimapa criado para a facção Imperio Brasil Planet
 // @coder        Equipe de desenvolvimento Império Brasil Planet
 // @match        https://pixelplanet.fun/*
@@ -11,11 +11,11 @@
 // @downloadURL  http://raw.githubusercontent.com/AsumaGC/Planet-Map/master/minimap.user.js
 // ==/UserScript==
 
-// ╔══╗──────────╔╗───  ╔══╗───────╔═╗╔╗───  ╔═╗──────────────╔╗─
-// ╚║║╝╔══╗╔═╗╔╦╗╠╣╔═╗  ║╔╗║╔╦╗╔═╗─║═╣╠╣╔╗─  ║╬║╔╗─╔═╗─╔═╦╗╔═╗║╚╗
-// ╔║║╗║║║║║╬║║╔╝║║║╬║  ║╔╗║║╔╝║╬╚╗╠═║║║║╚╗  ║╔╝║╚╗║╬╚╗║║║║║╩╣║╔╣
-// ╚══╝╚╩╩╝║╔╝╚╝─╚╝╚═╝  ╚══╝╚╝─╚══╝╚═╝╚╝╚═╝  ╚╝─╚═╝╚══╝╚╩═╝╚═╝╚═╝
-// ────────╚╝─────────  ───────────────────  ────────────────────
+// ╔══╗─────────────╔╗───  ╔══╗───────╔═╗╔╗───  ╔═╗──────────────╔╗─
+// ╚║║╝╔══╗╔═╗╔═╗╔╦╗╠╣╔═╗  ║╔╗║╔╦╗╔═╗─║═╣╠╣╔╗─  ║╬║╔╗─╔═╗─╔═╦╗╔═╗║╚╗
+// ╔║║╗║║║║║╬║║╩╣║╔╝║║║╬║  ║╔╗║║╔╝║╬╚╗╠═║║║║╚╗  ║╔╝║╚╗║╬╚╗║║║║║╩╣║╔╣
+// ╚══╝╚╩╩╝║╔╝╚═╝╚╝─╚╝╚═╝  ╚══╝╚╝─╚══╝╚═╝╚╝╚═╝  ╚╝─╚═╝╚══╝╚╩═╝╚═╝╚═╝
+────────╚╝────────────  ───────────────────  ────────────────────
 
 Number.prototype.between = function(a, b) {
   var min = Math.min.apply(Math, [a, b]),
