@@ -1,17 +1,17 @@
 {
-  "PixelCanvas Faction Board": {
+  "Brasil": {
     "name": "protect2.png",
     "x": -9308,
     "y":  1490,
     "width": 1781,
     "height": 582
   },
-  "Chrono Trigger": {
-    "name": "ChronoTrigger.png",
-    "x": 2873,
-    "y":  846,
-    "width": 153,
-    "height": 40
+  "yOwnrion": {
+    "name": "pixelart.png",
+    "x": -8022,
+    "y":  902,
+    "width": 373,
+    "height": 535
 }
   
 }
