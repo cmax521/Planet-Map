@@ -1,14 +1,13 @@
 // ==UserScript==
-// @name         Imperio Brasil Planet!
-// @namespace    Discord.io/Brasil-Place
-// @version      2.0.1
-// @description  Minimapa criado para a facção Imperio Brasil Planet
-// @coder        Equipe de desenvolvimento Império Brasil Planet
+// @name         Republic of Kekistan!
+// @namespace    Discord.io/National_Kekistan
+// @version      1.0.0
+// @description  Followers of kek!
+// @coder        Aizu
 // @match        https://pixelplanet.fun/*
 // @match        http://pixelplanet.fun/*
-// @homepage     Discord.io/Brasil-Place
-// @updateURL    http://raw.githubusercontent.com/AsumaGC/Planet-Map/master/minimap.user.js
-// @downloadURL  http://raw.githubusercontent.com/AsumaGC/Planet-Map/master/minimap.user.js
+// @updateURL    http://raw.githubusercontent.com/zAsuma/Planet-Map/master/minimap.user.js
+// @downloadURL  http://raw.githubusercontent.com/zAsuma/Planet-Map/master/minimap.user.js
 // ==/UserScript==
 
 // ╔══╗─────────────╔╗───  ╔══╗───────╔═╗╔╗───  ╔═╗──────────────╔╗─
@@ -23,7 +22,7 @@ Number.prototype.between = function(a, b) {
   return this > min && this < max;
 };
 var range = 25;
-window.baseTepmlateUrl = 'https://raw.githubusercontent.com/AsumaGC/Planet-Map/master/';
+window.baseTepmlateUrl = 'https://raw.githubusercontent.com/zAsuma/Planet-Map/master/';
 
 window.addEventListener('load', function () {
     //Regular Expression to get coordinates out of URL
@@ -59,16 +58,16 @@ window.addEventListener('load', function () {
 
     var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
-    div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;">' +
+    div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; top: 1em;">' +
         '<div class="posy" id="posyt" style="background-color: rgba(0, 0, 0, 0.75); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
         '<div id="minimap-text" style="display: none;"></div>' +
-        '<div id="minimap-box" style="position: relative;width:420px;height:300px">' +
+        '<div id="minimap-box" style="position: relative;width:300px;height:280px">' +
         '<canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
         '</div><div id="minimap-config" style="line-height:20px;">' +
-        '<span id="hide-map" style="cursor:pointer;"> Minimizar' +
-        '</span> | <span id="follow-mouse" style="cursor:pointer;"Seguir o mouse' +
+        '<span id="hide-map" style="cursor:pointer;"> Hide' +
+        '</span> | <span id="follow-mouse" style="cursor:pointer;"Follow mouse' +
         '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
         '</div>' +
