@@ -13,7 +13,7 @@
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/msedge.png) [Tampermonkey](https://www.microsoft.com/store/p/tampermonkey/9nblggh5162s)
 
 
-#### Etapa 2: Download the Script!
+#### Step 2: Download the Script!
 * [Click Here](https://github.com/zAsuma/Planet-Map/raw/master/minimap.user.js)
 
 
