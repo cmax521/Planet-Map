@@ -1,13 +1,13 @@
 {
-  "Brasil": {
-    "name": "protect2.png",
-    "x": -9308,
-    "y":  1490,
-    "width": 1781,
-    "height": 582
+  "Main": {
+    "name": "master.png",
+    "x": -16575,
+    "y":  -8044,
+    "width": 895,
+    "height": 429
   },
-  "yOwnrion": {
-    "name": "pixelart.png",
+  "livre": {
+    "name": "livre.png",
     "x": -8022,
     "y":  902,
     "width": 373,
