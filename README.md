@@ -1,6 +1,6 @@
 # Republic of Kekistan
 
-> Map created to Republic of Kekistan factions.
+> Map created by Aizu.
 
 ## Instalation
 > Follow the steps!
