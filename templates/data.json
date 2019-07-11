@@ -27,18 +27,18 @@
     "width": 72,
     "height": 47
   },
-  "underflag": {
-    "name": "underflag.png",
-    "x": -16247,
-    "y": 7697,
-    "width": 268,
-    "height": 39
-  },
   "kekistan": {
     "name": "kekistan.png",
     "x": -16785,
     "y": 8440,
     "width": 1316,
     "height": 396
+  },
+  "memewar_tribute": {
+    "name": "memewar_tribute.png",
+    "x": -16133,
+    "y": -7395,
+    "width": 227,
+    "height": 339
   }
 }
