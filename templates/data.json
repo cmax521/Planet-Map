@@ -40,5 +40,12 @@
     "y": -7395,
     "width": 227,
     "height": 339
-  }
+  },
+  "nc_main": {
+    "name": "NC_main.png",
+    "x": 950,
+    "y": -11407,
+    "width": 1437,
+    "height": 808
+  } 
 }
