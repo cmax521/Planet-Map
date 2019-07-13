@@ -1,51 +1,9 @@
 {
-  "Main": {
-    "name": "master.png",
-    "x": -16575,
-    "y":  -8044,
-    "width": 895,
-    "height": 429
-  },
-  "livre": {
-    "name": "livre.png",
-    "x": -8022,
-    "y":  902,
-    "width": 373,
-    "height": 535
-  },
-  "bye_tranny": {
-    "name": "bye_tranny.png",
-    "x": 277,
-    "y": -10597,
-    "width": 504,
-    "height": 325
-  },
-  "england_kekflag": {
-    "name": "england_kekflag.png",
-    "x": 87,
-    "y": -11548,
-    "width": 72,
-    "height": 47
-  },
-  "kekistan": {
-    "name": "kekistan.png",
-    "x": -16785,
-    "y": 8440,
-    "width": 1316,
-    "height": 396
-  },
-  "memewar_tribute": {
-    "name": "memewar_tribute.png",
-    "x": -16133,
-    "y": -7395,
-    "width": 227,
-    "height": 339
-  },
-  "nc_main": {
-    "name": "NC_main.png",
-    "x": 950,
-    "y": -11407,
-    "width": 1437,
-    "height": 808
-  } 
+  "poiu": {
+    "name": "poiu.png",
+    "x": 24217,
+    "y":  5801,
+    "width": 88,
+    "height": 68
+  }
 }
