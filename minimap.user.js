@@ -6,8 +6,8 @@
 // @coder        Aizu
 // @match        https://pixelplanet.fun/*
 // @match        http://pixelplanet.fun/*
-// @updateURL    http://raw.githubusercontent.com/zAsuma/Planet-Map/master/minimap.user.js
-// @downloadURL  http://raw.githubusercontent.com/zAsuma/Planet-Map/master/minimap.user.js
+// @updateURL    http://raw.githubusercontent.com/cmax521/Planet-Map/master/minimap.user.js
+// @downloadURL  http://raw.githubusercontent.com/cmax521/Planet-Map/master/minimap.user.js
 // ==/UserScript==
 
                                                                    
